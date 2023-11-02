@@ -17,4 +17,8 @@ return function (RoutingConfigurator $routes) {
 	$routes
 		->prefix('myshop')
 		->site(\Sites\s3\Site::class);
+    
+    $routes
+        ->prefix('demo')
+        ->site(\Sites\s4\Site::class);
 };
